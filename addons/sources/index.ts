@@ -1,9 +1,9 @@
-import addons, { makeDecorator } from "@storybook/addons";
+import addons, { makeDecorator } from '@storybook/addons';
 
-export const KEY = "DEMO_SOURCES";
+export const KEY = 'DEMO_SOURCES';
 
 export const withSources = makeDecorator({
-  name: "withSources",
+  name: 'withSources',
   skipIfNoParametersOrOptions: false,
   wrapper: (getStory, context) => {
     const channel = addons.getChannel();

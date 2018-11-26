@@ -1,6 +1,6 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { MyUiModule } from "my-ui";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MyUiModule } from 'my-ui';
 
 @NgModule({
   exports: [CommonModule, MyUiModule]

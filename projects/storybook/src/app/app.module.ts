@@ -1,8 +1,8 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppComponent } from "./app.component";
-import { StoriesModule } from "../stories/stories.module";
+import { AppComponent } from './app.component';
+import { StoriesModule } from '../stories/stories.module';
 import { FooButtonComponent } from './projects/my-ui/src/lib/foo-button/foo-button.component';
 
 @NgModule({

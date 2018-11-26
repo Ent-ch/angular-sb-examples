@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconButtonComponent } from "./icon-button.component";
+import { IconButtonComponent } from './icon-button.component';
 
-describe("IconButtonComponent", () => {
+describe('IconButtonComponent', () => {
   let component: IconButtonComponent;
   let fixture: ComponentFixture<IconButtonComponent>;
 
@@ -18,7 +18,7 @@ describe("IconButtonComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(/👾/.test(fixture.nativeElement.textContent));
   });
 });

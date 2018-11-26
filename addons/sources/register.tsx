@@ -1,11 +1,11 @@
-import * as React from "react";
-import addons from "@storybook/addons";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/styles/hljs";
+import * as React from 'react';
+import addons from '@storybook/addons';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/styles/hljs';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { KEY } from ".";
+import { KEY } from '.';
 
 export interface Sources {
   template: string;
@@ -36,13 +36,13 @@ export class SourcesPanel extends React.Component<any, SourcesPanel> {
   stopListeningOnStory: any;
 
   state = {
-    template: "",
-    component: ""
+    template: '',
+    component: ''
   };
 
   onAddHello = (sources: Sources) => {
     this.setState(sources);
-  };
+  }
 
   componentDidMount() {
     const { channel, api } = this.props;
@@ -50,7 +50,7 @@ export class SourcesPanel extends React.Component<any, SourcesPanel> {
     channel.on(KEY, this.onAddHello);
 
     this.stopListeningOnStory = api.onStory(() => {
-      this.onAddHello({ template: "", component: "" });
+      this.onAddHello({ template: '', component: '' });
     });
   }
 
@@ -83,7 +83,7 @@ export class SourcesPanel extends React.Component<any, SourcesPanel> {
 
 addons.register(KEY, api => {
   addons.addPanel(`${KEY}/Panel`, {
-    title: "Sources",
+    title: 'Sources',
     render: ({ active }) => (
       <SourcesPanel channel={addons.getChannel()} api={api} active={active} />
     )

@@ -1,13 +1,13 @@
-import { Component, OnInit } from "@angular/core";
-import { action } from "@storybook/addon-actions";
+import { Component, OnInit } from '@angular/core';
+import { action } from '@storybook/addon-actions';
 
 @Component({
-  selector: "sb-button-story",
-  templateUrl: "./button-story.component.html",
-  styleUrls: ["./button-story.component.scss"]
+  selector: 'sb-button-story',
+  templateUrl: './button-story.component.html',
+  styleUrls: ['./button-story.component.scss']
 })
 export class ButtonStoryComponent implements OnInit {
-  log = action("click");
+  log = action('click');
   constructor() {}
 
   ngOnInit() {
